@@ -4,8 +4,8 @@ prefix_count = 1
 
 def gather_input():
     try:
-        user_input = int(input("Please choose a number greater than 1:  "))
-        if user_input >= 1:
+        user_input = int(input("Please choose an integer greater than 1:  "))
+        if user_input >= 1 and type(user_input) == int:
             collatz(user_input)
         else:
             print("** Number must be greater than 1!")
