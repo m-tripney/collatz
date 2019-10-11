@@ -5,7 +5,7 @@ prefix_count = 1
 def gather_input():
     try:
         user_input = int(input("Please choose a number greater than 1:  "))
-        if user_input:
+        if user_input >= 1:
             collatz(user_input)
         else:
             print("** Number must be greater than 1!")
