@@ -16,14 +16,14 @@ def gather_input():
 
 
 def collatz(number):
-    if number % 2 == 0:
-        number = number // 2
-        print_sequence(number)
+    while number != 1:
+        if number % 2 == 0:
+            number //= 2
+        else:
+            number = 3 * number + 1
+        print(number)
         collatz(number)
-    elif number != 1:
-        number = 3 * number + 1
-        print_sequence(number)
-        collatz(number)
+        break
 
 
 def print_sequence(number):
