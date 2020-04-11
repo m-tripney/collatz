@@ -21,7 +21,7 @@ def collatz(number):
             number //= 2
         else:
             number = 3 * number + 1
-        print(number)
+        print_sequence(number)
         collatz(number)
         break
 
